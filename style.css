@@ -1,0 +1,138 @@
+/*position property */
+
+
+.parent-container {
+    background-color: beige;
+    border: 2px solid black;
+    width: 75vw;
+    height: 75vw;
+    /* increse height to 175vw to see effects */
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    position:relative;
+}
+
+.child {
+    padding: 25px;
+}
+
+.child1 {
+    border: 2px solid red;
+    background-color: red;
+    right: 25px;
+}
+
+.child2 {
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+    position: relative;
+    left: 15px;
+    top: 15px;
+}
+
+.child3 {
+    border: 2px solid green;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+/* moves it to the upper right hand corner because  */
+.child4 {
+    border: 2px solid teal;
+    background-color: teal;
+    position: fixed;
+    /* keeps element in the same position even when scrolling */
+    top: 225px;
+    ;
+}
+.child5 {
+    border: 2px solid gray;
+    background-color: gray;
+    position: sticky;
+    top: 0px;
+}
+
+/* 
+        Css position property
+       
+       
+        ? Static
+        
+        *defualt
+        *position in relation to elements
+        *top, bottom, left, right, z-index have no effect
+
+        ? Relative 
+        * just like static 
+        * can be changed using top, bottom, left, right, z-index
+        * values are realive to the original position
+        *
+        
+        ? Absolute 
+        
+        * removes element from the flow
+        * positions it relative to the parent container
+        * if parent is static, it will move outside the parent container
+        * if parent is relative, it will move within hte parent container
+        * positioning 
+
+        ? Fixed
+
+        * like absolute
+        * positioned to viewport
+        * doesn't move when scrolling
+        * positioned defined by top, bottom, right, z-index
+
+        ? Sticky
+
+        * mix of relative and fixed 
+        * relative to flow
+        * position definition used when you start scrolling 
+        * stays fixed when scrolling; relative when stationary
+
+/* Display Property
+
+* treats an element as a block or inline
+* blocks are created top to bottom 
+* inline are positioned side by side
+*/
+
+
+/* 
+    ? Display property
+
+    * Treats an element as block or inline
+    * Blocks are created top-to-bottom
+    * Inline are positioned side-by-side
+*/
+
+.display-container {
+    margin-top: 2em;
+}
+
+.block-container {
+    border: 2px solid black;
+    margin: 5px;
+}
+
+.inline-element {
+    margin: 5px;
+    display: block;
+}
+.inline-block{
+    border: 2px solid black;
+    margin: 5px;
+
+    display: inline-block;
+    width: 125px;
+}
+.float-container {
+    margin-top: 2em;
+    border: 2px solid orange;
+    background-color: orange;
+    width: 50 px;
+    height: 50px; 
+}
+
